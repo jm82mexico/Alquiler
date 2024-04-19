@@ -10,7 +10,17 @@
 	// "features": {},
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "kreativ-software.csharpextensions",
+				"ms-dotnettools.csharp",
+				"ms-mssql.mssql"
+            ]
+        }
+    },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001, 5432],
