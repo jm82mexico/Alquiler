@@ -1,4 +1,4 @@
-namespace CleanArquitecture.Domain.Vehiculos;
+namespace CleanArquitecture.Domain.Shared;
 
 public record TipoMoneda
 {

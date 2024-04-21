@@ -1,3 +1,4 @@
+using CleanArquitecture.Domain.Shared;
 using CleanArquitecture.Domain.Vehiculos;
 
 namespace CleanArquitecture.Domain.Alquiler;
