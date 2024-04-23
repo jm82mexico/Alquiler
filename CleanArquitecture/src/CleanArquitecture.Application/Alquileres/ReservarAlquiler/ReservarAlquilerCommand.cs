@@ -1,6 +1,6 @@
 using CleanArquitecture.Application.Abstractions.Messaging;
 
-namespace CleanArquitecture.Application.ReservarAlquiler;
+namespace CleanArquitecture.Application.Alquiler.ReservarAlquiler;
 
 public record ReservarAlquilerCommand
 (

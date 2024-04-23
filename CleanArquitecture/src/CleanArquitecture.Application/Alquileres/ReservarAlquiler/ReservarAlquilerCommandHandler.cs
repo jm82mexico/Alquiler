@@ -1,6 +1,3 @@
-
-
-using System.Runtime.CompilerServices;
 using CleanArquitecture.Application.Abstractions.Clock;
 using CleanArquitecture.Application.Abstractions.Messaging;
 using CleanArquitecture.Domain.Abstractions;
@@ -9,7 +6,7 @@ using CleanArquitecture.Domain.Alquiler.Events;
 using CleanArquitecture.Domain.User;
 using CleanArquitecture.Domain.Vehiculos;
 
-namespace CleanArquitecture.Application.ReservarAlquiler;
+namespace CleanArquitecture.Application.Alquiler.ReservarAlquiler;
 
 internal sealed class ReservarAlquilerCommandHandler :
     ICommandHandler<ReservarAlquilerCommand, Guid>
@@ -63,7 +60,7 @@ internal sealed class ReservarAlquilerCommandHandler :
             return Result<Guid>.Failure<Guid>(AlquilerErrors.Overlap);
         }
 
-        var alquiler = Alquiler.Reservar(
+        var alquiler = Domain.Alquiler.Alquiler.Reservar(
             vehiculo,
             user.Id,
             duracion,

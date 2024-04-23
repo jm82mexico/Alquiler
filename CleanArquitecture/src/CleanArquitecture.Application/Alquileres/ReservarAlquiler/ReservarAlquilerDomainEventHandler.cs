@@ -4,7 +4,7 @@ using CleanArquitecture.Domain.Alquiler.Events;
 using CleanArquitecture.Domain.User;
 using MediatR;
 
-namespace CleanArquitecture.Application.ReservarAlquiler;
+namespace CleanArquitecture.Application.Alquiler.ReservarAlquiler;
 
 public class ReservarAlquilerDomainEventHandler
 : INotificationHandler<AlquilerReservadoDomainEvent>
